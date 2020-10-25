@@ -1,0 +1,49 @@
+h1 {
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.result {
+    margin: 20px;
+    padding: 20px;
+    max-width: 200px;
+    background: #fff;
+    border: 2px solid #010058;
+    border-radius: 66px;
+}
+
+.loader {
+    border: 20px solid #ffe3e3;
+    border-top: 20px solid #e90000;
+    border-radius: 50%;
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.error {
+    border: 2px solid #2c0000;
+    padding: 40px;
+    color: #000;
+    background: #ff2828;
+}
